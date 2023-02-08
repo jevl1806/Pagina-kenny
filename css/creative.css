@@ -1,59 +1,47 @@
-#titulo {
+#header {
     background-image: url("https://www.dorothycircusgallery.uk/wp-content/uploads/2020/01/DCG_Anka-Zhuravleva_Untitled-1_2019_One-of-a-kind_Courtesy-DCG-the-Artist.jpg");
     background-size: cover;
     min-height: 80vh;
-    padding: 2%;
+    padding: 1rem;
 }
 
-.navbar-text {
-    color: #B2B2B2;
+.logo {
     font-family: 'Cinzel', serif;
+    color: #B2B2B2;
     font-size: 1.6rem;
-    position: fixed;
-    top: 0;
-    left: 44%;
-    align-items: justify;
     display: flex;
-    justify-content: center;
-    padding: 30px 20px;
-    transition: 0.7s;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: bottom;
-    padding: 30px 50px;
-    transition: 0.7s;  
-}
-
-header ul {
-    position: relative;
-    display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    flex-direction: row;
+    padding: 1rem;
 }
 
-header ul li {
-    list-style: none;
-
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-header ul li a {
-    position: relative;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
-    color: #EFEAD8;
-    margin: 0 15px;
+@media screen and (min-width: 720px) {
+    .nav-bar {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+}
+
+.item {
+    color: #D7C0AE;
     text-decoration: none;
-    letter-spacing: 5px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
     font-weight: 500;
-    transition: 0.7s;
 }
 
-header ul li a:hover {
+.item:hover {
 color: #8BBCCC;
 }
 
@@ -90,42 +78,114 @@ p {
 #introducción {
     background-color: #B7C4CF;
     width: 100%;
-    padding: 10%;
+    padding: 9% 10%;
+   
 }
 
 .img1 {
+    
     width: 300px;
     float: left;
-    margin: auto 6%;
+    margin: 5%;
     border-radius: 100%;
 }
 
 .perfil {
+   
     width: 95%;
     margin: 15px;
     text-align: right;
     line-height: 1.5;
 }
 
-/*Footer*/
-#footer {
-    background-color: #434242;
-    padding: 4%;
-    text-align: right;
+/*Publicidad*/
+#publicidad {
+    width: 100%;
+    background: center fixed url(https://mir-s3-cdn-cf.behance.net/projects/404/33701711221215.Y3JvcCw1NzEsNDQ3LDAsMTA5.jpg);
+    background-size: cover;
+    
+    padding: 20% 10% 30% 0%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    background-attachment: fixed;
 }
 
-.footer-link {
+.text-publi {
+    color: #F5EEDC;
+}
+
+.perfil {
+   opacity: 0.8;
+    padding: 5% 4%;
+    text-align: left; 
+}
+
+.boton { 
+border: 2px solid rgba(255,255,255,1);
+opacity: 0.8;
+color: #fff;
+padding: 4px 20px;
+text-decoration: none;
+border-radius: 50px;
+font-size: 0.9rem;
+transition: all .2s;
+}
+
+.boton:hover {
+   background: #fff; 
+   color: #000000;
+}
+
+/*contacto*/
+
+#contacto {
+    background-color: #B2B2B2;
+    padding: 4% 0% 7% 0%;
+    text-align: center;
+}
+
+.img {
+    float: center;
+    border-radius: 100%;
+    width: 300px;
+    padding: 4%;
+}
+
+.img-logos {
+    float: center;
+    width: 40px;
+    height: 40px;
+    margin: 1% 1%;
+}
+
+/*Footer*/
+
+#footer {
+    background-color: #434242;
+}
+
+.container {
+    padding: 4%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.pie {
     font-family: 'Playfair Display', serif;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #B2B2B2;
     text-decoration: none;
 }
 
-.footer-link:hover {
+.pie:hover {
     color: #256D85;
 }
 
 .copyright {
-color: #B2B2B2;
-text-align: left;
+    color: #B2B2B2;
+
 }
