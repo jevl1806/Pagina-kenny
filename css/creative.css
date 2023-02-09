@@ -101,7 +101,7 @@ p {
 /*Publicidad*/
 #publicidad {
     width: 100%;
-    background: center fixed url(https://mir-s3-cdn-cf.behance.net/projects/404/33701711221215.Y3JvcCw1NzEsNDQ3LDAsMTA5.jpg);
+    background: center fixed url("https://mir-s3-cdn-cf.behance.net/projects/404/33701711221215.Y3JvcCw1NzEsNDQ3LDAsMTA5.jpg");
     background-size: cover;
     
     padding: 20% 10% 30% 0%;
